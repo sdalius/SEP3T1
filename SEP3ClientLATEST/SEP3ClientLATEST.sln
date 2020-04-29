@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEP3ClientLATEST", "SEP3ClientLATEST.csproj", "{649D7BAC-B605-4B4D-BA40-EC2C2B94D599}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{649D7BAC-B605-4B4D-BA40-EC2C2B94D599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{649D7BAC-B605-4B4D-BA40-EC2C2B94D599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{649D7BAC-B605-4B4D-BA40-EC2C2B94D599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{649D7BAC-B605-4B4D-BA40-EC2C2B94D599}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD17CE3C-3751-47D8-8C11-E8E2EE35E3A2}
+	EndGlobalSection
+EndGlobal

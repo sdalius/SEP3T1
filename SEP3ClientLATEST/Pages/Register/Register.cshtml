@@ -1,0 +1,50 @@
+﻿@page
+@model SEP3ClientLATEST.RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h1>Register</h1>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+
+
+    <fieldset>
+        <legend>User</legend>
+        @Html.AntiForgeryToken()
+        @if (ViewBag.Message != null)
+        {
+
+            <div style="border:solid 1px green">
+                @ViewBag.Message
+            </div>
+        }
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Register.Surname)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Register.Surname)
+            @Html.ValidationMessageFor(model => model.Register.Surname)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Register.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Register.Name)
+            @Html.ValidationMessageFor(model => model.Register.Name)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Register.phoneNumber)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Register.phoneNumber)
+            @Html.ValidationMessageFor(model => model.Register.phoneNumber)
+        </div>
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+

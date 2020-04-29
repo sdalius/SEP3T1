@@ -1,0 +1,54 @@
+﻿@page
+@model SEP3ClientLATEST.IndexModel
+@{
+    ViewData["Title"] = "Song List";
+}
+
+<h1>All of the songs that are available right now</h1>
+<code>@Model.AddSomeSongs()</code>
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            ID
+        </th>
+        <th>
+            Artist
+        </th>
+        <th>
+            Title
+        </th>
+        <th>
+            Vote Amount
+        </th>
+        <th>
+            Genre
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.songList) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SongID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Artist)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VoteAmount)
+            </td>
+            <td>
+                Unknown
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.SongID">Vote</a> /
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
